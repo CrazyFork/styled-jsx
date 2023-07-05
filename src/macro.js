@@ -98,6 +98,7 @@ export default ({ createMacro, MacroError }) => {
         processTaggedTemplateExpression({
           type: 'resolve',
           path: templateExpression,
+          // notes: babel state
           file: state.file,
           splitRules:
             typeof state.opts.optimizeForSpeed === 'boolean'

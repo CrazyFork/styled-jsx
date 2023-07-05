@@ -143,6 +143,7 @@ const validateExternalExpressionsVisitor = {
 
     const { name } = path.node
     if (!path.scope.hasBinding(name)) {
+      // right way to throw babel error
       throw path.buildCodeFrameError(path.getSource())
     }
   },

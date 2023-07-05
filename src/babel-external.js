@@ -23,6 +23,7 @@ export function processTaggedTemplateExpression({
   sourceMaps,
   styleComponentImportName
 }) {
+  // notes: babel get es6 string template
   const templateLiteral = path.get('quasi')
   let scope
 

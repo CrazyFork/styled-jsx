@@ -1,3 +1,48 @@
+
+# Notes
+
+read how it works section first,
+
+
+key componets
+
+
+```
+src
+├── _constants.js
+├── _utils.js
+├── babel-external.js               // here implemented the most import parts for the babel transformation
+├── babel-test.js
+├── babel.js
+├── index.js
+├── lib
+│   ├── hash.js
+│   ├── style-transform.js          // transpile css
+│   └── stylesheet.js               // stylesheet implementation, client & server, insert, replace, remove style rule on the fly
+├── macro.js                        // babel macro that do the `adding correct imports & transform to react component`, this is triggered at built time, so it's more faster.
+├── style.js
+├── stylesheet-registry.js
+└── webpack.js                     
+
+```
+
+
+## key take aways
+
+* babel 
+    * transformation, and macro usage
+    * babel state
+* StyleSheet js api
+* 
+
+
+
+
+
+
+
+
+
 # styled-jsx
 
 [![build status](https://github.com/vercel/styled-jsx/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/vercel/styled-jsx/actions?query=branch%3Amain)
